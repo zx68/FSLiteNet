@@ -143,9 +143,9 @@ def get_args_parser():
                         help='finetune from checkpoint')
 
     # Dataset parameters
-    parser.add_argument('--data-path', default=r'D:\数据集\NWPU45', type=str,
+    parser.add_argument('--data-path', default=r'D:\数据集\UCM', type=str,
                         help='dataset path')
-    parser.add_argument('--data-set', default='NWPU45', choices=['AID', 'UCM', 'INAT', 'INAT19', 'TG2', 'NWPU45'],
+    parser.add_argument('--data-set', default='UCM', choices=['AID', 'UCM', 'INAT', 'INAT19', 'TG2', 'NWPU45'],
                         type=str, help='Image Net dataset path')
     parser.add_argument('--inat-category', default='name',
                         choices=['kingdom', 'phylum', 'class', 'order', 'supercategory', 'family', 'genus', 'name'],
@@ -252,7 +252,7 @@ def main(args):
 
     print(f"Creating model: {args.arch}")
 
-    num_classes = 45
+    num_classes = 21
 
 
     if args.arch == 'DFIBNet':
