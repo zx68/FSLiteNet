@@ -15,7 +15,7 @@ from timm.scheduler import create_scheduler
 from timm.optim import create_optimizer
 from timm.utils import NativeScaler, get_state_dict, ModelEma
 from functools import partial
-import torchvision.models as models
+# import torchvision.models as models
 import torch.nn as nn
 
 from datasets import build_dataset
